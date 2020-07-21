@@ -202,7 +202,7 @@ sed -i 's/mydbpass/'"$PGDBPASS"'/' /var/www/moodle/html/config.php # Configure p
 sed -i 's/mytesturl/https:\/\/'"$PUBHOST"'/' /var/www/moodle/html/config.php # Configure url
 
 
-MOODLE_DATA="/mnt/mdl/data"  # moodle data folder
+MOODLE_DATA="\/mnt\/mdl\/data"  # moodle data folder
 sed -i 's/mydataroot/'"$MOODLE_DATA"'/' /var/www/moodle/html/config.php # Configure Moodle data root
 
 echo "Set defaults for Moodle..."
