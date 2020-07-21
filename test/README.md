@@ -20,28 +20,6 @@ chmod u+x moodle-backup.sh
 sudo ./moodle-backup.sh
 ```
 
-## Moosh Installation
-
-```bash
-#!/bin/bash
-
-# Installs Moosh - https://moosh-online.com/
-wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/mooshinstall.sh
-chmod u+x mooshinstall.sh
-sudo ./mooshinstall.sh
-```
-
-## Moosh Report
-
-```bash
-#!/bin/bash
-
-# Runs Moosh Report
-wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/generatemooshreport.sh
-chmod u+x generatemooshreport.sh
-sudo ./generatemooshreport.sh
-```
-
 ## Reset Installation
 
 ```bash
@@ -63,4 +41,27 @@ sudo ./moodle-reset.sh
 wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/moodle-restore.sh
 chmod u+x moodle-restore.sh
 sudo ./moodle-restore.sh
+```
+
+
+## Moosh Installation
+
+```bash
+#!/bin/bash
+
+# Installs Moosh - https://moosh-online.com/
+wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/mooshinstall.sh
+chmod u+x mooshinstall.sh
+sudo ./mooshinstall.sh
+```
+
+## Moosh Report
+
+```bash
+#!/bin/bash
+
+# Runs Moosh Report
+wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/generatemooshreport.sh
+chmod u+x generatemooshreport.sh
+sudo ./generatemooshreport.sh
 ```
