@@ -5,7 +5,7 @@ MOODLE_DATA="/mnt/mdl/data"  # moodle data folder
 GIT_DIR="/var/www/moodle/git"      # git folder
 
 MOODLE_BRANCH="MOODLE_39_STABLE"     # Moodle Branch
-PLUGINS_GIT="https://github.com/AdrianoRuseler/mdlmooc-plugins.git"
+PLUGINS_GIT="https://github.com/ProjetoSophiaDev/moodleplugins.git"
 
 TMP_DIR="/tmp"                       # temp folder
 SYSUPGRADE=1                         # Perform system upgrade?
