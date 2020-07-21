@@ -183,7 +183,8 @@ echo "#4 - Install moodle"
 # Clone git repository
 cd /var/www/moodle/git
 git clone --depth=1 --branch=MOODLE_39_STABLE https://github.com/moodle/moodle.git core
-git clone --depth=1 --recursive https://github.com/AdrianoRuseler/mdlmooc-plugins.git plugins
+git clone --depth=1 --recursive https://github.com/ProjetoSophiaDev/moodleplugins plugins
+git clone --depth=1 --recursive https://github.com/ProjetoSophiaDev/scripts.git scripts
 
 # Merge and move moodle files
 rsync -a /var/www/moodle/git/core/ /tmp/moodle
@@ -193,14 +194,14 @@ rsync -a /var/www/moodle/git/plugins/climaintenance.html /mnt/mdl/data/climainte
 mv /tmp/moodle/* /var/www/moodle/html
 
 # Copy moodle config file
-cp /var/www/moodle/git/plugins/scripts/test/config-dist.php /var/www/moodle/html/config.php 
+cp /var/www/moodle/git/scripts/test/config-dist.php /var/www/moodle/html/config.php 
 sed -i 's/mydbname/'"$PGDBNAME"'/' /var/www/moodle/html/config.php # Configure password
 sed -i 's/mydbuser/'"$PGDBUSER"'/' /var/www/moodle/html/config.php # Configure password
 sed -i 's/mydbpass/'"$PGDBPASS"'/' /var/www/moodle/html/config.php # Configure password
 sed -i 's/mytesturl/https:\/\/'"$PUBHOST"'/' /var/www/moodle/html/config.php # Configure url
 
 echo "Set defaults for Moodle..."
-cp /var/www/moodle/git/plugins/scripts/test/defaults-dist.php /var/www/moodle/html/local/defaults.php 
+cp /var/www/moodle/git/scripts/test/defaults-dist.php /var/www/moodle/html/local/defaults.php 
 sed -i 's/mytesturl/'"$PUBHOST"'/' /var/www/moodle/html/local/defaults.php 
 
 MDLADMPASS=$(pwgen -s 14 1) # Generates ramdon password for Moodle Admin
