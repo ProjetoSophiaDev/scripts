@@ -7,16 +7,34 @@
 wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/userdata-test-ubuntu.sh
 chmod u+x userdata-test-ubuntu.sh
 sudo ./userdata-test-ubuntu.sh
+```
+
+## Backup Installation
+
+```bash
+#!/bin/bash
+
+# Creates moodle backup
+wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/moodle-backup.sh
+chmod u+x moodle-backup.sh
+sudo ./moodle-backup.sh
+```
+
+## Moosh Installation
+
+```bash
+#!/bin/bash
 
 # Installs Moosh - https://moosh-online.com/
 wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/mooshinstall.sh
 chmod u+x mooshinstall.sh
 sudo ./mooshinstall.sh
+```
 
-# Creates system backup
-wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/moodle-backup.sh
-chmod u+x moodle-backup.sh
-sudo ./moodle-backup.sh
+## Moosh Report
+
+```bash
+#!/bin/bash
 
 # Runs Moosh Report
 wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/generatemooshreport.sh
