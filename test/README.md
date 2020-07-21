@@ -4,22 +4,22 @@
 #!/bin/bash
 
 # Installs Moodle - https://moodle.org
-wget https://raw.githubusercontent.com/AdrianoRuseler/mdlmooc-plugins/master/scripts/test/userdata-test-ubuntu.sh
+wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/userdata-test-ubuntu.sh
 chmod u+x userdata-test-ubuntu.sh
 sudo ./userdata-test-ubuntu.sh
 
 # Installs Moosh - https://moosh-online.com/
-wget https://raw.githubusercontent.com/AdrianoRuseler/mdlmooc-plugins/master/scripts/test/mooshinstall.sh
+wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/mooshinstall.sh
 chmod u+x mooshinstall.sh
 sudo ./mooshinstall.sh
 
 # Creates system backup
-wget https://raw.githubusercontent.com/AdrianoRuseler/mdlmooc-plugins/master/scripts/test/moodle-backup.sh
+wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/moodle-backup.sh
 chmod u+x moodle-backup.sh
 sudo ./moodle-backup.sh
 
 # Runs Moosh Report
-wget https://raw.githubusercontent.com/AdrianoRuseler/mdlmooc-plugins/master/scripts/test/generatemooshreport.sh
+wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/generatemooshreport.sh
 chmod u+x generatemooshreport.sh
 sudo ./generatemooshreport.sh
 ```
@@ -30,7 +30,7 @@ sudo ./generatemooshreport.sh
 #!/bin/bash
 
 # Reset Moodle - https://moodle.org
-wget https://raw.githubusercontent.com/AdrianoRuseler/mdlmooc-plugins/master/scripts/test/moodle-reset.sh
+wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/moodle-reset.sh
 chmod u+x moodle-reset.sh
 sudo ./moodle-reset.sh
 ```
@@ -42,7 +42,7 @@ sudo ./moodle-reset.sh
 #!/bin/bash
 
 # Restore Moodle - https://moodle.org
-wget https://raw.githubusercontent.com/AdrianoRuseler/mdlmooc-plugins/master/scripts/test/moodle-restore.sh
+wget https://raw.githubusercontent.com/ProjetoSophiaDev/scripts/master/test/moodle-restore.sh
 chmod u+x moodle-restore.sh
 sudo ./moodle-restore.sh
 ```
