@@ -252,6 +252,9 @@ else
   sudo -u www-data /usr/bin/php admin/cli/install_database.php --lang=pt_br --adminpass=$MDLADMPASS --agree-license --adminemail=$ADM_EMAIL --fullname="Moodle $mdlver" --shortname="Moodle $mdlver"
 fi
 
+echo "disable the maintenance mode..."
+sudo -u www-data /usr/bin/php $MOODLE_HOME/admin/cli/maintenance.php --disable
+
 # Add cron for moodle - Shows: no crontab for root
 (crontab -l | grep . ; echo -e "*/1 * * * * /usr/bin/php  /var/www/moodle/html/admin/cli/cron.php >/dev/null\n") | crontab -
 
