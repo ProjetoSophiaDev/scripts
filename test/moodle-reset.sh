@@ -59,7 +59,7 @@ echo "Remove defaults..."
 rm $MOODLE_HOME/local/defaults.php
 
 echo "Set new defaults for Moodle..."
-wget https://raw.githubusercontent.com/AdrianoRuseler/mdlmooc-plugins/master/scripts/test/defaults-dist.php -O $MOODLE_HOME/local/defaults.php
+cp /var/www/moodle/git/default-settings/moodle/local/defaults-dist.php /var/www/moodle/html/local/defaults.php
 
 # Gets public hostname
 PUBHOST=$(ec2metadata --public-hostname | cut -d : -f 2 | tr -d " ")
