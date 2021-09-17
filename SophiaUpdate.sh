@@ -4,7 +4,7 @@ MOODLE_HOME="/var/www/moodle/html" # moodle core folder
 MOODLE_DATA="/mnt/nvme1n1p1/data"  # moodle data folder
 GIT_DIR="/var/www/git"      # git folder
 
-MOODLE_BRANCH="MOODLE_39_STABLE"     # Moodle Branch
+MOODLE_BRANCH="MOODLE_310_STABLE"     # Moodle Branch
 PLUGINS_GIT="https://github.com/AdrianoRuseler/mdlmooc-plugins.git"
 
 TMP_DIR="/tmp"                       # temp folder
